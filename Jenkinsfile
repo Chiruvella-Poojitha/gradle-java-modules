@@ -16,7 +16,7 @@ spec:
     image: 'jenkins/jnlp-slave:4.3-4-alpine'
     args: ['\$(JENKINS_SECRET)', '\$(JENKINS_NAME)']
   - name: gradle     # Jenkins agent container to run maven commands
-    image: node:14
+    image: gradle
     command:
     - cat
     tty: true
